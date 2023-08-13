@@ -1,16 +1,18 @@
-package bepAnToan_DucThang;
+package automation.testsuite;
 
 import static org.testng.Assert.assertTrue;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import automation.PageLocation.DetailProduct;
+import automation.PageLocation.FilterProduct;
+import automation.PageLocation.OrderProduct;
 import automation.common.CommonBase;
 
-public class MuaNgay_Test_ChuyenKhoan extends CommonBase {
+public class MuaNgay_Test_TienMat extends CommonBase {
 
 	@BeforeTest
 	public void openChrome() {
@@ -18,22 +20,15 @@ public class MuaNgay_Test_ChuyenKhoan extends CommonBase {
 	}
 
 	@Test
-	public void orderProduc_Success_Bank() {
+	public void orderProduc_Success() {
 		FilterProduct homePage = new FilterProduct(driver);
 		homePage.filterHomePage();
 
 		DetailProduct detailProduct = new DetailProduct(driver);
 		detailProduct.buyNow();
-		pause(2000);
-
-		WebElement isSelected_RadioChuyenKhoan = driver.findElement(detailProduct.radioChuyenKhoan);
-		if (isSelected_RadioChuyenKhoan.isSelected() == false) {
-			((JavascriptExecutor) driver).executeScript("arguments[0].click()", isSelected_RadioChuyenKhoan);
-		}
 
 		OrderProduct orderDetail = new OrderProduct(driver);
 		orderDetail.orderProduct("abc", "0998878555", "123", "123");
-		
 
 		pause(2000);
 		WebElement titleSuccess = driver.findElement(OrderProduct.titleOrderDetailSuccess);
@@ -41,18 +36,12 @@ public class MuaNgay_Test_ChuyenKhoan extends CommonBase {
 	}
 
 	@Test
-	public void orderProduc_Fail_BlankHoVaTen_Bank() {
+	public void orderProduc_Fail_BlankHoVaTen() {
 		FilterProduct homePage = new FilterProduct(driver);
 		homePage.filterHomePage();
 
 		DetailProduct detailProduct = new DetailProduct(driver);
 		detailProduct.buyNow();
-		pause(2000);
-
-		WebElement isSelected_RadioChuyenKhoan = driver.findElement(detailProduct.radioChuyenKhoan);
-		if (isSelected_RadioChuyenKhoan.isSelected() == false) {
-			((JavascriptExecutor) driver).executeScript("arguments[0].click()", isSelected_RadioChuyenKhoan);
-		}
 
 		OrderProduct orderDetail = new OrderProduct(driver);
 		orderDetail.orderProduct("", "0998878555", "123", "123");
@@ -62,18 +51,12 @@ public class MuaNgay_Test_ChuyenKhoan extends CommonBase {
 	}
 
 	@Test
-	public void orderProduc_Fail_BlankSDT_Bank() {
+	public void orderProduc_Fail_BlankSDT() {
 		FilterProduct homePage = new FilterProduct(driver);
 		homePage.filterHomePage();
 
 		DetailProduct detailProduct = new DetailProduct(driver);
 		detailProduct.buyNow();
-
-		pause(2000);
-		WebElement isSelected_RadioChuyenKhoan = driver.findElement(detailProduct.radioChuyenKhoan);
-		if (isSelected_RadioChuyenKhoan.isSelected() == false) {
-			((JavascriptExecutor) driver).executeScript("arguments[0].click()", isSelected_RadioChuyenKhoan);
-		}
 
 		OrderProduct orderDetail = new OrderProduct(driver);
 		orderDetail.orderProduct("abc", "", "123", "123");
@@ -84,18 +67,12 @@ public class MuaNgay_Test_ChuyenKhoan extends CommonBase {
 	
 	
 	@Test
-	public void orderProduc_Fail_SDT_Invalid_Bank() {
+	public void orderProduc_Fail_SDT_Invalid() {
 		FilterProduct homePage = new FilterProduct(driver);
 		homePage.filterHomePage();
 
 		DetailProduct detailProduct = new DetailProduct(driver);
 		detailProduct.buyNow();
-
-		pause(2000);
-		WebElement isSelected_RadioChuyenKhoan = driver.findElement(detailProduct.radioChuyenKhoan);
-		if (isSelected_RadioChuyenKhoan.isSelected() == false) {
-			((JavascriptExecutor) driver).executeScript("arguments[0].click()", isSelected_RadioChuyenKhoan);
-		}
 
 		OrderProduct orderDetail = new OrderProduct(driver);
 		orderDetail.orderProduct("abc", "abc", "123", "123");
@@ -105,19 +82,12 @@ public class MuaNgay_Test_ChuyenKhoan extends CommonBase {
 	}
 
 	@Test
-	public void orderProduc_Fail_BlankDiaChi_Bank() {
+	public void orderProduc_Fail_BlankDiaChi() {
 		FilterProduct homePage = new FilterProduct(driver);
 		homePage.filterHomePage();
 
 		DetailProduct detailProduct = new DetailProduct(driver);
 		detailProduct.buyNow();
-		pause(2000);
-
-
-		WebElement isSelected_RadioChuyenKhoan = driver.findElement(detailProduct.radioChuyenKhoan);
-		if (isSelected_RadioChuyenKhoan.isSelected() == false) {
-			((JavascriptExecutor) driver).executeScript("arguments[0].click()", isSelected_RadioChuyenKhoan);
-		}
 
 		OrderProduct orderDetail = new OrderProduct(driver);
 		orderDetail.orderProduct("abc", "0998878555", "", "123");
@@ -127,18 +97,12 @@ public class MuaNgay_Test_ChuyenKhoan extends CommonBase {
 	}
 
 	@Test
-	public void orderProduc_Fail_BlankAll_Bank() {
+	public void orderProduc_Fail_BlankAll() {
 		FilterProduct homePage = new FilterProduct(driver);
 		homePage.filterHomePage();
 
 		DetailProduct detailProduct = new DetailProduct(driver);
 		detailProduct.buyNow();
-		pause(2000);
-
-		WebElement isSelected_RadioChuyenKhoan = driver.findElement(detailProduct.radioChuyenKhoan);
-		if (isSelected_RadioChuyenKhoan.isSelected() == false) {
-			((JavascriptExecutor) driver).executeScript("arguments[0].click()", isSelected_RadioChuyenKhoan);
-		}
 
 		OrderProduct orderDetail = new OrderProduct(driver);
 		orderDetail.orderProduct("", "", "", "123");
@@ -152,7 +116,7 @@ public class MuaNgay_Test_ChuyenKhoan extends CommonBase {
 		WebElement titleFAIL_DiaChi = driver.findElement(OrderProduct.titleOrderDetail_FAIL_DiaChi);
 		assertTrue(titleFAIL_DiaChi.isDisplayed());
 	}
-	
+
 //	@Test
 //	public void tongDaiTuVan() throws InterruptedException {
 //		HomePage homePage = new HomePage(driver);

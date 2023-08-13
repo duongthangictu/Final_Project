@@ -3,18 +3,30 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="bepAnToan_DucThang.MuaNgay_Test_TienMat">
+      <class name="automation.testsuite.MuaNgay_Test_TienMat">
         <methods>
+          <include name="orderProduc_Fail_BlankAll"/>
           <include name="orderProduc_Success"/>
-          <include name="openChrome"/>
-          <include name="closeChome"/>
+          <include name="orderProduc_Fail_SDT_Invalid"/>
+          <include name="orderProduc_Fail_BlankSDT"/>
           <include name="orderProduc_Fail_BlankHoVaTen"/>
           <include name="orderProduc_Fail_BlankDiaChi"/>
-          <include name="orderProduc_Fail_BlankSDT"/>
-          <include name="orderProduc_Fail_BlankAll"/>
-          <include name="orderProduc_Fail_SDT_Invalid"/>
+          <include name="openChrome"/>
+          <include name="closeChome"/>
         </methods>
-      </class> <!-- bepAnToan_DucThang.MuaNgay_Test_TienMat -->
+      </class> <!-- automation.testsuite.MuaNgay_Test_TienMat -->
+      <class name="automation.testsuite.MuaNgay_Test_ChuyenKhoan">
+        <methods>
+          <include name="openChrome"/>
+          <include name="orderProduc_Fail_SDT_Invalid_Bank"/>
+          <include name="orderProduc_Success_Bank"/>
+          <include name="orderProduc_Fail_BlankDiaChi_Bank"/>
+          <include name="orderProduc_Fail_BlankHoVaTen_Bank"/>
+          <include name="orderProduc_Fail_BlankSDT_Bank"/>
+          <include name="orderProduc_Fail_BlankAll_Bank"/>
+          <include name="closeChome"/>
+        </methods>
+      </class> <!-- automation.testsuite.MuaNgay_Test_ChuyenKhoan -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

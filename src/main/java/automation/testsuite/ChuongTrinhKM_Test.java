@@ -1,9 +1,11 @@
-package bepAnToan_DucThang;
+package automation.testsuite;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import automation.PageLocation.DetailProduct;
+import automation.PageLocation.FilterProduct;
 import automation.common.CommonBase;
 
 public class ChuongTrinhKM_Test extends CommonBase {

@@ -1,4 +1,4 @@
-package bepAnToan_DucThang;
+package automation.PageLocation;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
