@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <move file="C:\Users\DUC THANG\Documents\Project_Final_ME\Project_ID\target/Project_ID-apexconf.jar" tofile="C:\Users\DUC THANG\Documents\Project_Final_ME\Project_ID\target/Project_ID.apc"/>
+</target>
+</project>

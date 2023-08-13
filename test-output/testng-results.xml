@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-13T11:37:24 ICT" name="Default suite" finished-at="2023-08-13T11:39:28 ICT" duration-ms="123563">
+    <groups>
+    </groups>
+    <test started-at="2023-08-13T11:37:24 ICT" name="Default test" finished-at="2023-08-13T11:39:28 ICT" duration-ms="123563">
+      <class name="bepAnToan_DucThang.MuaNgay_Test_TienMat">
+        <test-method is-config="true" signature="openChrome()[pri:0, instance:bepAnToan_DucThang.MuaNgay_Test_TienMat@194bcebf]" started-at="2023-08-13T11:37:24 ICT" name="openChrome" finished-at="2023-08-13T11:37:37 ICT" duration-ms="12336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openChrome -->
+        <test-method signature="orderProduc_Fail_BlankAll()[pri:0, instance:bepAnToan_DucThang.MuaNgay_Test_TienMat@194bcebf]" started-at="2023-08-13T11:37:37 ICT" name="orderProduc_Fail_BlankAll" finished-at="2023-08-13T11:37:57 ICT" duration-ms="20808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderProduc_Fail_BlankAll -->
+        <test-method signature="orderProduc_Fail_BlankDiaChi()[pri:0, instance:bepAnToan_DucThang.MuaNgay_Test_TienMat@194bcebf]" started-at="2023-08-13T11:37:57 ICT" name="orderProduc_Fail_BlankDiaChi" finished-at="2023-08-13T11:38:17 ICT" duration-ms="19543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderProduc_Fail_BlankDiaChi -->
+        <test-method signature="orderProduc_Fail_BlankHoVaTen()[pri:0, instance:bepAnToan_DucThang.MuaNgay_Test_TienMat@194bcebf]" started-at="2023-08-13T11:38:17 ICT" name="orderProduc_Fail_BlankHoVaTen" finished-at="2023-08-13T11:38:33 ICT" duration-ms="16352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderProduc_Fail_BlankHoVaTen -->
+        <test-method signature="orderProduc_Fail_BlankSDT()[pri:0, instance:bepAnToan_DucThang.MuaNgay_Test_TienMat@194bcebf]" started-at="2023-08-13T11:38:33 ICT" name="orderProduc_Fail_BlankSDT" finished-at="2023-08-13T11:38:50 ICT" duration-ms="16298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderProduc_Fail_BlankSDT -->
+        <test-method signature="orderProduc_Fail_SDT_Invalid()[pri:0, instance:bepAnToan_DucThang.MuaNgay_Test_TienMat@194bcebf]" started-at="2023-08-13T11:38:50 ICT" name="orderProduc_Fail_SDT_Invalid" finished-at="2023-08-13T11:39:07 ICT" duration-ms="17067" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderProduc_Fail_SDT_Invalid -->
+        <test-method signature="orderProduc_Success()[pri:0, instance:bepAnToan_DucThang.MuaNgay_Test_TienMat@194bcebf]" started-at="2023-08-13T11:39:07 ICT" name="orderProduc_Success" finished-at="2023-08-13T11:39:25 ICT" duration-ms="18223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderProduc_Success -->
+        <test-method is-config="true" signature="closeChome()[pri:0, instance:bepAnToan_DucThang.MuaNgay_Test_TienMat@194bcebf]" started-at="2023-08-13T11:39:25 ICT" name="closeChome" finished-at="2023-08-13T11:39:28 ICT" duration-ms="2760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeChome -->
+      </class> <!-- bepAnToan_DucThang.MuaNgay_Test_TienMat -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
